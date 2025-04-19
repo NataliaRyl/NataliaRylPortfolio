@@ -18,5 +18,6 @@
     main {
         padding: 2rem;
         text-align: center;
+        min-height: 80vh;
     }
 </style>

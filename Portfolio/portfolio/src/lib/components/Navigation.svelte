@@ -1,19 +1,22 @@
 <script>
-    
+     import { page } from '$app/stores';
 </script>
 
 <nav class="nav">
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About Me</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/cv">CV</a></li>
+        <li><a href="/" class={$page.url.pathname === '/' ? 'selected' : ''}>Home</a></li>
+        <li><a href="/about" class={$page.url.pathname === '/about' ? 'selected' : ''}>About Me</a></li>
+        <li><a href="/projects" class={$page.url.pathname === '/projects' ? 'selected' : ''}>Projects</a></li>
+        <li><a href="/cv" class={$page.url.pathname === '/cv' ? 'selected' : ''}>CV</a></li>
     </ul>
 </nav>
 
 <style>
-    .nav {
+     .nav {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .nav ul {
@@ -22,6 +25,7 @@
         gap: 100px;
         padding: 10px;
         margin: 0;
+        font-size: 20px;
     }
 
     .nav li {
@@ -36,7 +40,9 @@
         transition: background 0.3s;
     }
 
-    .nav a:hover, .nav a.active {
-        background-color: #d3e0d1;
+    .nav a:hover, .nav a.selected {
+        background-color: #a8bba9;
+        color: white;
     }
+
 </style>
