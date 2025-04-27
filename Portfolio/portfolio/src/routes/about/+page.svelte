@@ -7,30 +7,48 @@
 </script>
 
 <div class="container">
-    <h1>About Me</h1>
+    <div class="content">
+        <h1>About Me</h1>
 
-    <div class="text-box">
-        <img src="/profile.jpg" alt="Profile of Natalia" id="floated">
-        
-        <p>I'm a student currently studying Interactive Digital Art and Design.</p>
-        <p>I'm passionate about animation and concept art—I love creating characters, worlds, and stories that feel alive. 
-            Art has always been my way of exploring ideas and expressing emotions.</p>
-        <p>I enjoy making games for fun, experimenting with visuals and mechanics to bring ideas to life.</p>
-        <p>I also design logos on the side, finding joy in creating simple yet impactful designs.</p>
-        <p>Recently, I've been diving into UI/UX design, where creativity meets functionality. Outside of digital art, I run a small Etsy shop where I create custom bead patterns.</p>
-        <p>I'm always learning, experimenting, and pushing myself to improve. This portfolio is a glimpse into my journey—thanks for stopping by!</p>
+        <div class="text-box">
+            <img src="/profile.jpg" alt="Profile of Natalia" id="floated">
+            
+            <p>I'm a student currently studying Interactive Digital Art and Design.</p>
+            <p>I'm passionate about animation and concept art—I love creating characters, worlds, and stories that feel alive. 
+                Art has always been my way of exploring ideas and expressing emotions.</p>
+            <p>I enjoy making games for fun, experimenting with visuals and mechanics to bring ideas to life.</p>
+            <p>I also design logos on the side, finding joy in creating simple yet impactful designs.</p>
+            <p>Recently, I've been diving into UI/UX design, where creativity meets functionality. Outside of digital art, I run a small Etsy shop where I create custom bead patterns.</p>
+            <p>I'm always learning, experimenting, and pushing myself to improve. This portfolio is a glimpse into my journey—thanks for stopping by!</p>
+        </div>
     </div>
+</div>
+
+<div class="social">
+    <a href="mailto:nataliaryl492@gmail.com" target="_blank"><img src="/gmail.png" alt="gmail logo" id="gmail"></a>
+    <a href="https://www.linkedin.com/in/natalia-ryl-4902n/" target="_blank"><img src="/linkedin.png" alt="linkedin logo" id="linkedin"></a>
+    <a href="https://github.com/NataliaRyl" target="_blank"><img src="/github.png" alt="github logo" id="github"></a>
+    <a href="https://codeberg.org/NataliaRyl" target="_blank"><img src="/codeberg.png" alt="codeberg logo" id="codeberg"></a>
+    <a href="https://designsbynatie.etsy.com" target="_blank"><img src="/etsy.png" alt="etsy logo" id="etsy"></a>
 </div>
 
 <style>
     .container {
-        padding: 60px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 10px 80px;
+        gap: 60px;
+    }
+
+    .content {
+        width: 100%;
     }
 
     h1 {
         font-size: 48px;
         font-weight: 450;
-        margin-top: 0;
         margin-bottom: 30px;
         text-align: left;
     }
@@ -42,6 +60,7 @@
         color: #f1f1f1;
         padding: 30px;
         overflow: hidden;
+        width: 100%;
     }
 
     .text-box img {
@@ -57,4 +76,28 @@
         margin: 0 0 10px 0;
         text-align: left;
     }
+
+    #gmail, #linkedin {
+        height: 50px;
+        padding-right: 20px;
+        margin-top: 7px;
+    }
+
+    #codeberg, #etsy {
+        height: 60px;
+    }
+
+    #github {
+        height: 60px;
+        padding-right: 20px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-top: 30px;
+        margin-right: 200px;
+    }
+
 </style>
