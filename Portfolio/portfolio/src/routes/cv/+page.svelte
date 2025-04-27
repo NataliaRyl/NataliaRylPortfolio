@@ -59,12 +59,12 @@
 
     .download-link {
         display: inline-block;
-        margin-top: 200px;
+        margin-top: 300px;
         font-size: 18px;
-        color: #a8bba9;
+        color: #000000;
         text-decoration: none;
         padding: 10px 20px;
-        background-color: #f1f1f1;
+        background-color: #dddddd;
         border-radius: 8px;
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
