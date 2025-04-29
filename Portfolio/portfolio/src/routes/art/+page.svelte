@@ -58,9 +58,8 @@
     <div class="wrapper">
         <h2>Character Design</h2>
         <div class="textbox">
-            <p>For this project, I explored how the character would look in motion from three different angles.
-                It helped me figure out how their design holds up while moving.</p>
-            <p>I then picked one of those poses to turn into a final, more polished illustration. 
+            <p>For this project, I explored how the character would look in motion from three different angles by sketching it.</p>
+            <p>I then picked one of those poses to turn into a final illustration, created in Clip Studio Paint. 
                 It was a fun way to bring the character to life and show a bit of their personality through movement.</p>
         </div>
     </div>
@@ -153,7 +152,7 @@
     }
 
     .prev:hover, .next:hover {
-        transform: scale(1.2);
+        transform: scale(1.5);
     }
 
 </style>
