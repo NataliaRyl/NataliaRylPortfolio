@@ -10,8 +10,8 @@
 
 <div class="wrapper">
     <div class="cv-content">
-        <img src="/CV1.png" alt="CV Page 1" class="cv-page">
-        <img src="/CV2.png" alt="CV Page 2" class="cv-page">
+        <img src="/images/CV1.png" alt="CV Page 1" class="cv-page">
+        <img src="/images/CV2.png" alt="CV Page 2" class="cv-page">
     </div>
 
     <a href="/Natalia_Ryl_CV.pdf" download="Natalia_Ryl_CV.pdf" class="download-link">Download CV</a>
@@ -23,7 +23,7 @@
         font-weight: 450;
         margin-bottom: 30px;
         text-align: left;
-        padding-left: 207px;
+        padding-left: 208px;
         padding-top: 10px;
     }
     

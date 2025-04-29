@@ -20,7 +20,7 @@
 	</div>
 
 	<div class="logo">
-		<img src="/logo.png" alt="Designs by Natie Logo">
+		<img src="/images/logo.png" alt="Designs by Natie Logo">
 	</div>
 </div>
 
