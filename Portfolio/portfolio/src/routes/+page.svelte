@@ -10,7 +10,7 @@
 	<div class="intro">
 		<h1>Natalia Ryl</h1>
 		<div class="intro-textbox">
-			<p>Hey, I'm Natalia!</p>
+			<p><b>Hey, I'm Natalia!</b></p>
 			<p>
 				I love bringing ideas to life through animation and concept art.
 				I enjoy making games for fun and I like to design logos on the side.

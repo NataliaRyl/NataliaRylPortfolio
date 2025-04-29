@@ -13,7 +13,7 @@
         <div class="text-box">
             <img src="/images/profile.jpg" alt="Profile of Natalia" id="floated">
             
-            <p>I'm a student currently studying Interactive Digital Art and Design.</p>
+            <p><b>I'm a student currently studying Interactive Digital Art and Design.</b></p>
             <p>I'm passionate about animation and concept art—I love creating characters, worlds, and stories that feel alive. 
                 Art has always been my way of exploring ideas and expressing emotions.</p>
             <p>I enjoy making games for fun, experimenting with visuals and mechanics to bring ideas to life.</p>

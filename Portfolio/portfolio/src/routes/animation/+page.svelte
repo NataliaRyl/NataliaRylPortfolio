@@ -19,7 +19,7 @@
     <div class="wrapper">
         <h2>Character Walkcycle</h2>
         <div class="textbox">
-            <p>This is a basic walk cycle I animated in Adobe Animate, using the same character from the turnaround. 
+            <p>This is a basic <b>walk cycle</b> I animated in Adobe Animate, using the same character from the turnaround. 
                 It was all about getting the movement smooth and making sure the character stayed consistent from frame to frame. 
                 A good bit of trial and error, but a really useful exercise in the animation basics.</p>
         </div>
@@ -36,7 +36,7 @@
     <div class="wrapper">
         <h2>Character Runcycle</h2>
         <div class="textbox">
-            <p>This is a basic run cycle I animated in Adobe Animate, using the same character from the turnaround. 
+            <p>This is a basic <b>run cycle</b> I animated in Adobe Animate, using the same character from the turnaround. 
                 It was a good challenge to push the timing and energy compared to the walk cycle, 
                 while still keeping everything consistent across the frames. 
                 Definitely a faster pace, but fun to bring a bit more momentum into the movement.</p>

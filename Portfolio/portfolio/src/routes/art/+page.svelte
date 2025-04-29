@@ -36,7 +36,7 @@
     <div class="wrapper">
         <h2>Character Turn Around</h2>
         <div class="textbox">
-            <p>This original character, created in Clip Studio Paint, features a turnaround with five views: 
+            <p>This <b>original character</b>, created in Clip Studio Paint, features a turnaround with five views: 
                 front, ¾ front, side, ¾ back, and back.</p>
             <p>This design showcases the character's details and proportions from all sides, giving a complete look at their appearance 
                 and personality.</p>
@@ -58,7 +58,7 @@
     <div class="wrapper">
         <h2>Character Design</h2>
         <div class="textbox">
-            <p>For this project, I explored how the character would look in motion from three different angles by sketching it.</p>
+            <p>For this project, I explored how the character would look <b>in motion from three different angles</b> by sketching it.</p>
             <p>I then picked one of those poses to turn into a final illustration, created in Clip Studio Paint. 
                 It was a fun way to bring the character to life and show a bit of their personality through movement.</p>
         </div>
@@ -105,7 +105,7 @@
         align-items: center;
         justify-content: flex-start;
         width: 350px;
-        margin-left: 100px;
+        margin-left: 45px;
         gap: 10px;
     }
 
@@ -133,7 +133,7 @@
         align-items: flex-start;
         justify-content: center;
         width: 100%;
-        margin-left: 150px;
+        margin-left: 200px;
     }
 
     /* Arrows Styling */
