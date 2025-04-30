@@ -18,6 +18,7 @@
 
     <div class="wrapper">
         <h2>Character Walkcycle</h2>
+        <p class="project-year">Year 2 College Project</p>
         <div class="textbox">
             <p>This is a basic <b>walk cycle</b> I animated in Adobe Animate, using the same character from the turnaround. 
                 It was all about getting the movement smooth and making sure the character stayed consistent from frame to frame. 
@@ -35,6 +36,7 @@
 
     <div class="wrapper">
         <h2>Character Runcycle</h2>
+        <p class="project-year">Year 2 College Project</p>
         <div class="textbox">
             <p>This is a basic <b>run cycle</b> I animated in Adobe Animate, using the same character from the turnaround. 
                 It was a good challenge to push the timing and energy compared to the walk cycle, 
@@ -69,6 +71,13 @@
     .date {
         font-size: 15px;
         margin: 5px 0;
+    }
+
+    .project-year {
+        font-size: 14px;
+        color: #666;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 
     .textbox {

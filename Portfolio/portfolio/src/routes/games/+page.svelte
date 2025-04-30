@@ -40,6 +40,7 @@
 
     <div class="wrapper">
         <h2>Army Escape</h2>
+        <p class="project-year">Year 2 College Project</p>
         <div class="textbox">
             <p>This is a fast-paced pixel game where you have to find and rescue all seven hidden squad members as quickly as possible. 
                 I was inspired by BTS <b>— my favourite group —</b> since they're all currently serving in the military, and that sparked the idea for the game. 
@@ -69,7 +70,7 @@
         </ul>
 
         <div class="links">
-            <a href="https://ui-programming-24-25.codeberg.page/Natalia-Ryl-C00294480-UI-Programming-Module-Project/" target="_blank">Link to game</a>
+            <a href="https://ui-programming-24-25.codeberg.page/Natalia-Ryl-C00294480-UI-Programming-Module-Project/" target="_blank">Link to Game</a>
             <a href="https://codeberg.org/UI-Programming-24-25/Natalia-Ryl-C00294480-UI-Programming-Module-Project.git" target="_blank">Link to Codeberg repo</a>
         </div>
     </div>
@@ -102,12 +103,20 @@
         margin: 5px 0;
     }
 
+    .project-year {
+        font-size: 14px;
+        color: #666;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
     video {
         height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        border-radius: 10px;
     }
 
     .textbox {

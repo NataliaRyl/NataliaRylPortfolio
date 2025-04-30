@@ -30,11 +30,12 @@
 <div class="container">
     <div class="art">
         <img src="/images/art/CTA.png" alt="character turn around">
-        <p class="date">Year created: 2025</p>
+        <p class="date">Year created: 2024</p>
     </div>
 
     <div class="wrapper">
         <h2>Character Turn Around</h2>
+        <p class="project-year">Year 2 College Project</p>
         <div class="textbox">
             <p>This <b>original character</b>, created in Clip Studio Paint, features a turnaround with five views: 
                 front, ¾ front, side, ¾ back, and back.</p>
@@ -48,7 +49,7 @@
 <div class="container">
     <div class="art">
         <img src={art2Images[index]} alt="Character Design" />
-        <p class="date">Year created: 2025</p>
+        <p class="date">Year created: 2024</p>
         <div class="arrows">
             <span class="prev" on:click={prev}>&#10094;</span>
             <span class="next" on:click={next}>&#10095;</span>
@@ -57,6 +58,7 @@
 
     <div class="wrapper">
         <h2>Character Design</h2>
+        <p class="project-year">Year 2 College Project</p>
         <div class="textbox">
             <p>For this project, I explored how the character would look <b>in motion from three different angles</b> by sketching it.</p>
             <p>I then picked one of those poses to turn into a final illustration, created in Clip Studio Paint. 
@@ -90,6 +92,13 @@
     .date {
         font-size: 15px;
         margin: 5px 0;
+    }
+
+    .project-year {
+        font-size: 14px;
+        color: #666;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 
     .art img {
