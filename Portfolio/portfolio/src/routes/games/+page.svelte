@@ -6,13 +6,13 @@
     });
 
     const armyEscapeImages = [
-        '/images/game/mainMenu.png',
-        '/images/game/instructions.png',
-        '/images/game/gameEnd.png',
-        '/images/game/members1.png',
-        '/images/game/members2.png',
-        '/images/game/bg.png',
-        'images/game/playerSpritesheet.png'
+        '/game/mainMenu.png',
+        '/game/instructions.png',
+        '/game/gameEnd.png',
+        '/game/members1.png',
+        '/game/members2.png',
+        '/game/bg.png',
+        '/game/playerSpritesheet.png'
     ];
 
     let index = 0;
@@ -32,7 +32,7 @@
 <div class="container">
     <div class="video">
         <video controls>
-            <source src="/images/game/armyEscape.mp4" type="video/mp4" />
+            <source src="/game/armyEscape.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         <p class="date">Year created: 2024</p>

@@ -8,8 +8,8 @@
     });
 
     const art2Images = [
-        '/images/art/design.png',
-        '/images/art/sketch.jpg'
+        '/art/design.png',
+        '/art/sketch.jpg'
     ];
 
     let index = 0;
@@ -29,7 +29,7 @@
 <!-- art piece 1 -->
 <div class="container">
     <div class="art">
-        <img src="/images/art/CTA.png" alt="character turn around">
+        <img src="/art/CTA.png" alt="character turn around">
         <p class="date">Year created: 2024</p>
     </div>
 

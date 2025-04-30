@@ -8,14 +8,15 @@
     let activeCategory = '';
     const categories = ['Web Development', 'Web Design', 'Logo Deisgn']
 
+    // sage academy 
     const sageAcademyDesktop = [
-        {type: 'video', src: '/images/web/sage-academy/sageAcademy.mp4'},
-        {type: 'image', src: '/images/web/sage-academy/homePage.png'},
-        {type: 'image', src: '/images/web/sage-academy/signIn.png'},
-        {type: 'image', src: '/images/web/sage-academy/staffHome.png'},
-        {type: 'image', src: '/images/web/sage-academy/quizPage.png'},
-        {type: 'image', src: '/images/web/sage-academy/addTopic.png'},
-        {type: 'image', src: '/images/web/sage-academy/searchBar.png'}
+        {type: 'video', src: '/web/sage-academy/sageAcademy.mp4'},
+        {type: 'image', src: '/web/sage-academy/homePage.png'},
+        {type: 'image', src: '/web/sage-academy/signIn.png'},
+        {type: 'image', src: '/web/sage-academy/staffHome.png'},
+        {type: 'image', src: '/web/sage-academy/quizPage.png'},
+        {type: 'image', src: '/web/sage-academy/addTopic.png'},
+        {type: 'image', src: '/web/sage-academy/searchBar.png'}
     ];
 
     let index = 0;
@@ -29,12 +30,12 @@
     };
 
     const sageAcademyMobile = [
-        '/images/web/sage-academy/mobileHome.jpg',
-        '/images/web/sage-academy/mobileSignIn.jpg',
-        '/images/web/sage-academy/mobileStaffHome.jpg',
-        '/images/web/sage-academy/mobileNav.jpg',
-        '/images/web/sage-academy/mobileLR.jpg',
-        '/images/web/sage-academy/mobileAddModule.jpg'
+        '/web/sage-academy/mobileHome.jpg',
+        '/web/sage-academy/mobileSignIn.jpg',
+        '/web/sage-academy/mobileStaffHome.jpg',
+        '/web/sage-academy/mobileNav.jpg',
+        '/web/sage-academy/mobileLR.jpg',
+        '/web/sage-academy/mobileAddModule.jpg'
     ];
 
     let indexMobile = 0;
@@ -45,6 +46,46 @@
 
     const prevMobile = () => {
         indexMobile = (indexMobile - 1 + sageAcademyMobile.length) % sageAcademyMobile.length;
+    };
+
+    // to do app
+
+    const toDoMobile = [
+        '/web/to-do/mobile1.png',
+        '/web/to-do/mobile2.png',
+        '/web/to-do/mobile3.png',
+        '/web/to-do/mobile4.png',
+        '/web/to-do/mobile5.png',
+        '/web/to-do/mobile6.png'
+    ];
+
+    let indexToDoM = 0;
+
+    const nextToDoM = () => {
+        indexToDoM = (indexToDoM + 1) % toDoMobile.length
+    };
+
+    const prevToDoM = () => {
+        indexToDoM = (indexToDoM - 1 + toDoMobile.length) % toDoMobile.length;
+    };
+
+    const toDoDesktop = [
+        '/web/to-do/desktop1.png',
+        '/web/to-do/desktop2.png',
+        '/web/to-do/desktop3.png',
+        '/web/to-do/desktop4.png',
+        '/web/to-do/desktop5.png',
+        '/web/to-do/desktop6.png'
+    ];
+
+    let indexToDoD = 0;
+
+    const nextToDoD = () => {
+        indexToDoD = (indexToDoD + 1) % toDoDesktop.length
+    };
+
+    const prevToDoD = () => {
+        indexToDoD = (indexToDoD - 1 + toDoDesktop.length) % toDoDesktop.length;
     };
 
 </script>
@@ -72,7 +113,7 @@
         {:else if sageAcademyDesktop[index].type === 'image'}
             <img src={sageAcademyDesktop[index].src} alt="Sage Academy preview slideshow" />
         {/if}
-        <p class="date">Year created: 2024</p>
+        <p class="date">Year created: 2025</p>
 
         <div class="arrows">
             <span class="prev" on:click={prev}>&#10094;</span>
@@ -117,7 +158,39 @@
 
 
 {:else if activeCategory === 'Web Design'}
-    <h2>To-Do App</h2>
+    <div class="container">
+        <div class="images-to-do-m">
+            <img src={toDoMobile[indexToDoM]} alt="To Do App mobile preview" />
+            <p class="date">Year created: 2025</p>
+            <div class="arrows">
+                <span class="prev" on:click={prevToDoM}>&#10094;</span>
+                <span class="next" on:click={nextToDoM}>&#10095;</span>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h2>To-Do App</h2>
+            <p class="project-year">Year 2 College Project</p>
+            <div class="textbox">
+                <p>I designed this to-do app to look and feel like a real notebook. 
+                    It includes both mobile and desktop versions, with a cozy, hand-drawn style that makes organizing tasks feel more personal and intuitive. 
+                    The goal was to blend the charm of analog planning with the ease of digital tools.</p>
+            </div>
+
+            <div class="links">
+                <a href="/images/web/to-do/to-do-mobile.zip" download>Download Mobile Files (.zip)</a>
+                <a href="/images/web/to-do/to-do-desktop.zip" download>Download Desktop Files (.zip)</a>
+            </div>
+
+            <div class="images-to-do-d">
+                <img src={toDoDesktop[indexToDoD]} alt="To Do App desktop preview" />
+                <div class="arrows">
+                    <span class="prev" on:click={prevToDoD}>&#10094;</span>
+                    <span class="next" on:click={nextToDoD}>&#10095;</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 {:else if activeCategory === 'Logo Design'}
@@ -316,12 +389,17 @@
         font-size: 18px;
         color: #2e4e2e;
     }
+    .links {
+        display: flex;
+        gap: 20px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
     .links a {
-        display: inline-block;
         font-size: 16px;
-        margin-right: 20px;
-        margin-top: 15px;
         padding: 8px 12px;
         background-color: #f1f1f1;
         color: #2e4e2e;
@@ -329,10 +407,46 @@
         border-radius: 5px;
         text-decoration: none;
         transition: background-color 0.2s ease, transform 0.2s ease;
+        white-space: nowrap;
     }
 
     .links a:hover {
         background-color: #d8e3d9;
         transform: scale(1.05);
+    }
+
+    /* to do app */
+    .images-to-do-d {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        gap: 10px;
+    }
+
+    .images-to-do-d img {
+        height: 300px;
+        width: auto;
+        border: #526253 solid 1px;
+        border-radius: 10px;
+        object-fit: contain;
+    }
+
+    .images-to-do-m img {
+        width: auto;
+        border: #526253 solid 1px;
+        border-radius: 10px;
+        object-fit: contain;
+    }
+
+    .images-to-do-m {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 300px;
+        margin-left: 20px;
+        gap: 10px;
     }
 </style>

@@ -12,7 +12,7 @@
 <!-- animation 1 -->
 <div class="container">
     <div class="gif">
-        <img src="/images/animation/walkcycle.gif" alt="walkcycle animation">
+        <img src="/animation/walkcycle.gif" alt="walkcycle animation">
         <p class="date">Year created: 2024</p>
     </div>
 
@@ -30,7 +30,7 @@
 <!-- animation 2 -->
 <div class="container">
     <div class="gif">
-        <img src="/images/animation/runcycle.gif" alt="runcycle animation">
+        <img src="/animation/runcycle.gif" alt="runcycle animation">
         <p class="date">Year created: 2024</p>
     </div>
 

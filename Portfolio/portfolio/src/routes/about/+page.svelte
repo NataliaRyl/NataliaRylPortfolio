@@ -11,7 +11,7 @@
         <h1>About Me</h1>
 
         <div class="text-box">
-            <img src="/images/profile.jpg" alt="Profile of Natalia" id="floated">
+            <img src="/profile.jpg" alt="Profile of Natalia" id="floated">
             
             <p><b>I'm a student currently studying Interactive Digital Art and Design.</b></p>
             <p>I'm passionate about animation and concept art—I love creating characters, worlds, and stories that feel alive. 
@@ -25,11 +25,11 @@
 </div>
 
 <div class="social">
-    <a href="mailto:nataliaryl492@gmail.com" target="_blank"><img src="/images/socials/gmail.png" alt="gmail logo" id="gmail"></a>
-    <a href="https://www.linkedin.com/in/natalia-ryl-4902n/" target="_blank"><img src="/images/socials/linkedin.png" alt="linkedin logo" id="linkedin"></a>
-    <a href="https://github.com/NataliaRyl" target="_blank"><img src="/images/socials/github.png" alt="github logo" id="github"></a>
-    <a href="https://codeberg.org/NataliaRyl" target="_blank"><img src="/images/socials/codeberg.png" alt="codeberg logo" id="codeberg"></a>
-    <a href="https://designsbynatie.etsy.com" target="_blank"><img src="/images/socials/etsy.png" alt="etsy logo" id="etsy"></a>
+    <a href="mailto:nataliaryl492@gmail.com" target="_blank"><img src="/socials/gmail.png" alt="gmail logo" id="gmail"></a>
+    <a href="https://www.linkedin.com/in/natalia-ryl-4902n/" target="_blank"><img src="/socials/linkedin.png" alt="linkedin logo" id="linkedin"></a>
+    <a href="https://github.com/NataliaRyl" target="_blank"><img src="/socials/github.png" alt="github logo" id="github"></a>
+    <a href="https://codeberg.org/NataliaRyl" target="_blank"><img src="/socials/codeberg.png" alt="codeberg logo" id="codeberg"></a>
+    <a href="https://designsbynatie.etsy.com" target="_blank"><img src="/socials/etsy.png" alt="etsy logo" id="etsy"></a>
 </div>
 
 <style>

@@ -7,7 +7,7 @@
 <header>
     <!-- Logo -->
     <div class="logo">
-        <img src="/images/logo.png" alt="Designs by Natie Logo">
+        <img src="/logo.png" alt="Designs by Natie Logo">
     </div>
 
     <!-- Navigation -->
