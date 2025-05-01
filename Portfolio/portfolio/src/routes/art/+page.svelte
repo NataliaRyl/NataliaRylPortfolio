@@ -7,26 +7,98 @@
         console.log("Art Page Loaded");
     });
 
-    const art2Images = [
+    let activeCategory = 'Show All';
+    const categories = ['Show All', 'Character Design', 'Pixel Art', 'Storyboards'];
+
+    const designImages = [
         '/art/design.png',
         '/art/sketch.jpg'
     ];
 
+    const pixelAssets = [
+        '/art/bow-arrow.png',
+        '/art/med-kit.png',
+        '/art/shield.png'
+    ];
+
+    const bolgin = [
+        '/art/bolgin.png',
+        '/art/bolgin-front.png',
+        '/art/bolgin-side.png',
+        '/art/bolgin-sad.png',
+        '/art/bolgin-sleeping.png',
+        '/art/bolgin-forest.png',
+        '/art/bolgin-pickaxe.png',
+        '/art/bolgin-short.png',
+        '/art/bolgin-sword.png',
+        '/art/bolgin-petting.png'
+    ];
+
+    const totto = [
+        '/art/totto.png',
+        '/art/totto-front.png',
+        '/art/totto-side.png',
+        '/art/totto-happy.png',
+        '/art/totto-sleeping.png',
+        '/art/totto-flowers.png',
+        '/art/totto-scared.png',
+        '/art/totto-licking.png'
+    ];
+
     let index = 0;
+    let index2 = 0;
+    let index3 = 0;
+    let index4 = 0;
 
     const next = () => {
-        index = (index + 1) % art2Images.length
+        index = (index + 1) % designImages.length
     };
 
     const prev = () => {
-        index = (index - 1 + art2Images.length) % art2Images.length;
+        index = (index - 1 + designImages.length) % designImages.length;
     };
+
+    const next2 = () => {
+        index2 = (index2 + 1) % pixelAssets.length
+    };
+
+    const prev2 = () => {
+        index2 = (index2 - 1 + pixelAssets.length) % pixelAssets.length;
+    };
+
+    const next3 = () => {
+        index3 = (index3 + 1) % bolgin.length
+    };
+
+    const prev3 = () => {
+        index3 = (index3 - 1 + bolgin.length) % bolgin.length;
+    };
+
+    const next4 = () => {
+        index4 = (index4 + 1) % totto.length
+    };
+
+    const prev4 = () => {
+        index4 = (index4 - 1 + totto.length) % totto.length;
+    };
+    
     
 </script>
 
 <h1>Art</h1>
 
-<!-- art piece 1 -->
+<div class="category-buttons">
+    {#each categories as cat}
+    <button 
+        class:selected={activeCategory === cat} 
+        on:click={() => activeCategory = cat}>
+        {cat}
+    </button>
+    {/each}
+</div>
+
+{#if activeCategory === 'Show All'} 
+<!-- art 1 -->
 <div class="container">
     <div class="art">
         <img src="/art/CTA.png" alt="character turn around">
@@ -45,10 +117,10 @@
     </div>
 </div>
 
-<!-- art piece 2 -->
+<!-- art 2 -->
 <div class="container">
     <div class="art">
-        <img src={art2Images[index]} alt="Character Design" />
+        <img src={designImages[index]} alt="Character Design" />
         <p class="date">Year created: 2024</p>
         <div class="arrows">
             <span class="prev" on:click={prev}>&#10094;</span>
@@ -66,6 +138,187 @@
         </div>
     </div>
 </div>
+
+<!-- art 3 -->
+<div class="container">
+    <div class="art">
+        <img src={pixelAssets[index2]} alt="Pixel Art Assets" />
+        <p class="date">Year created: 2023</p>
+        <div class="arrows">
+            <span class="prev" on:click={prev2}>&#10094;</span>
+            <span class="next" on:click={next2}>&#10095;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Pixel Art Assets</h2>
+        <p class="project-year">Year 1 College Project</p>
+        <div class="textbox">
+            <p>I made this little <b>fantasy-themed pixel art set</b> in Aseprite, featuring a shield, med kit, and bow and arrow. 
+                I kept the style and colours consistent so they'd feel like they belong in the same game world.</p>
+        </div>
+    </div>
+</div>
+
+<!-- art 4 -->
+<div class="container">
+    <div class="art-special">
+        <img src={bolgin[index3]} alt="Bolgin the Dwarf" />
+        <p class="date">Year created: 2023</p>
+        <div class="arrows">
+            <span class="prev" on:click={prev3}>&#10094;</span>
+            <span class="next" on:click={next3}>&#10095;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Bolgin the Dwarf</h2>
+        <p class="project-year">Year 1 College Project</p>
+        <div class="textbox">
+            <p>This character design was part of a worldbuilding brief where I had to create a <b>unique hero</b>. 
+                I wanted to challenge the typical idea of what a hero looks like—so I designed <b>Bolgin</b>, an unlikely dwarf protagonist who's soft, scruffy, and deeply connected to nature. 
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- art 5 -->
+<div class="container">
+    <div class="art-special">
+        <img src={totto[index4]} alt="Totto the Pug" />
+        <p class="date">Year created: 2023</p>
+        <div class="arrows">
+            <span class="prev" on:click={prev4}>&#10094;</span>
+            <span class="next" on:click={next4}>&#10095;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Totto the Pug</h2>
+        <p class="project-year">Year 1 College Project</p>
+        <div class="textbox">
+            <p><b>Totto</b> was designed as the perfect <b>companion character</b>. 
+                I wanted to create a pet sidekick that felt more than just cute, so I leaned into <b>contrast</b>: she's small and sad-looking but secretly clever and magical.
+            </p>
+        </div>
+    </div>
+</div>
+
+{:else if activeCategory === 'Character Design'}
+
+<!-- art 1 -->
+<div class="container">
+    <div class="art">
+        <img src="/art/CTA.png" alt="character turn around">
+        <p class="date">Year created: 2024</p>
+    </div>
+
+    <div class="wrapper">
+        <h2>Character Turn Around</h2>
+        <p class="project-year">Year 2 College Project</p>
+        <div class="textbox">
+            <p>This <b>original character</b>, created in Clip Studio Paint, features a turnaround with five views: 
+                front, ¾ front, side, ¾ back, and back.</p>
+            <p>This design showcases the character's details and proportions from all sides, giving a complete look at their appearance 
+                and personality.</p>
+        </div>
+    </div>
+</div>
+
+<!-- art 2 -->
+<div class="container">
+    <div class="art">
+        <img src={designImages[index]} alt="Character Design" />
+        <p class="date">Year created: 2024</p>
+        <div class="arrows">
+            <span class="prev" on:click={prev}>&#10094;</span>
+            <span class="next" on:click={next}>&#10095;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Character Design</h2>
+        <p class="project-year">Year 2 College Project</p>
+        <div class="textbox">
+            <p>For this project, I explored how the character would look <b>in motion from three different angles</b> by sketching it.</p>
+            <p>I then picked one of those poses to turn into a final illustration, created in Clip Studio Paint. 
+                It was a fun way to bring the character to life and show a bit of their personality through movement.</p>
+        </div>
+    </div>
+</div>
+
+<!-- art 4 -->
+<div class="container">
+    <div class="art-special">
+        <img src={bolgin[index3]} alt="Bolgin the Dwarf" />
+        <p class="date">Year created: 2023</p>
+        <div class="arrows">
+            <span class="prev" on:click={prev3}>&#10094;</span>
+            <span class="next" on:click={next3}>&#10095;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Bolgin the Dwarf</h2>
+        <p class="project-year">Year 1 College Project</p>
+        <div class="textbox">
+            <p>This character design was part of a worldbuilding brief where I had to create a <b>unique hero</b>. 
+                I wanted to challenge the typical idea of what a hero looks like—so I designed <b>Bolgin</b>, an unlikely dwarf protagonist who's soft, scruffy, and deeply connected to nature. 
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- art 5 -->
+<div class="container">
+    <div class="art-special">
+        <img src={totto[index4]} alt="Totto the Pug" />
+        <p class="date">Year created: 2023</p>
+        <div class="arrows">
+            <span class="prev" on:click={prev4}>&#10094;</span>
+            <span class="next" on:click={next4}>&#10095;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Totto the Pug</h2>
+        <p class="project-year">Year 1 College Project</p>
+        <div class="textbox">
+            <p><b>Totto</b> was designed as the perfect <b>companion character</b>. 
+                I wanted to create a pet sidekick that felt more than just cute, so I leaned into <b>contrast</b>: she's small and sad-looking but secretly clever and magical.
+            </p>
+        </div>
+    </div>
+</div>
+
+{:else if activeCategory === 'Pixel Art'}
+
+<!-- art 3 -->
+<div class="container">
+    <div class="art">
+        <img src={pixelAssets[index2]} alt="Pixel Art Assets" />
+        <p class="date">Year created: 2023</p>
+        <div class="arrows">
+            <span class="prev" on:click={prev2}>&#10094;</span>
+            <span class="next" on:click={next2}>&#10095;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Pixel Art Assets</h2>
+        <p class="project-year">Year 1 College Project</p>
+        <div class="textbox">
+            <p>I made this little <b>fantasy-themed pixel art set</b> in Aseprite, featuring a shield, med kit, and bow and arrow. 
+                I kept the style and colours consistent so they'd feel like they belong in the same game world.</p>
+        </div>
+    </div>
+</div>
+
+{:else if activeCategory === 'Storyboards'}
+
+<h1>Work In Progress...</h1>
+
+{/if}
 
 <style>
     h1 {
@@ -102,10 +355,11 @@
     }
 
     .art img {
-        height: 350px;
+        height: 300px;
         width: auto;
         border: #526253 solid 1px;
         border-radius: 10px;
+        object-fit: contain;
     }
 
     .art {
@@ -113,17 +367,39 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        width: 350px;
-        margin-left: 45px;
+        width: 300px;
+        margin-left: 120px;
+        gap: 10px;
+    }
+
+    .art-special img {
+        height: 300px;
+        width: 100%;
+        max-width: 300px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        border: #526253 solid 1px;
+        border-radius: 10px;
+    }
+
+    .art-special {
+        width: 750px;
+        min-height: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 120px;
         gap: 10px;
     }
 
     .container {
         display: flex;
-        align-items: stretch; 
-        justify-content: space-between;
-        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start; 
         padding: 10px 80px 80px;
+        gap: 60px;
     }
 
     .textbox {
@@ -132,8 +408,6 @@
         border-radius: 10px;
         color: #f1f1f1;
         padding: 30px;
-        width: 100%; 
-        max-width: 500px;
     }
 
     .wrapper {
@@ -142,7 +416,11 @@
         align-items: flex-start;
         justify-content: center;
         width: 100%;
-        margin-left: 200px;
+        margin-left: 150px;
+        margin-top: -30px; 
+        text-align: left;
+        z-index: 1;
+        position: relative;
     }
 
     /* Arrows Styling */
@@ -162,6 +440,37 @@
 
     .prev:hover, .next:hover {
         transform: scale(1.5);
+    }
+
+    /* category buttons */
+    .category-buttons {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 40px;
+        margin-left: 200px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: none;
+        color: #2e4e2e;
+        background-color: #f1f1f1;
+        border: 1px solid #526253;
+        cursor: pointer;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+        background-color: #d8e3d9;
+        transform: scale(1.05);
+    }
+
+    button.selected {
+        background-color: #d8e3d9;
+        font-weight: bold;
+        box-shadow: 3px 3px 0 #a8bba9;
     }
 
 </style>

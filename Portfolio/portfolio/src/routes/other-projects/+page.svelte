@@ -6,7 +6,7 @@
     });
 
     let activeCategory = '';
-    const categories = ['Web Development', 'Web Design', 'Logo Deisgn']
+    const categories = ['Web Development', 'Web Design', 'Logo Design']
 
     // sage academy 
     const sageAcademyDesktop = [
@@ -19,16 +19,6 @@
         {type: 'image', src: '/web/sage-academy/searchBar.png'}
     ];
 
-    let index = 0;
-
-    const next = () => {
-        index = (index + 1) % sageAcademyDesktop.length
-    };
-
-    const prev = () => {
-        index = (index - 1 + sageAcademyDesktop.length) % sageAcademyDesktop.length;
-    };
-
     const sageAcademyMobile = [
         '/web/sage-academy/mobileHome.jpg',
         '/web/sage-academy/mobileSignIn.jpg',
@@ -38,7 +28,16 @@
         '/web/sage-academy/mobileAddModule.jpg'
     ];
 
+    let index = 0;
     let indexMobile = 0;
+
+    const next = () => {
+        index = (index + 1) % sageAcademyDesktop.length
+    };
+
+    const prev = () => {
+        index = (index - 1 + sageAcademyDesktop.length) % sageAcademyDesktop.length;
+    };
 
     const nextMobile = () => {
         indexMobile = (indexMobile + 1) % sageAcademyMobile.length
@@ -59,16 +58,6 @@
         '/web/to-do/mobile6.png'
     ];
 
-    let indexToDoM = 0;
-
-    const nextToDoM = () => {
-        indexToDoM = (indexToDoM + 1) % toDoMobile.length
-    };
-
-    const prevToDoM = () => {
-        indexToDoM = (indexToDoM - 1 + toDoMobile.length) % toDoMobile.length;
-    };
-
     const toDoDesktop = [
         '/web/to-do/desktop1.png',
         '/web/to-do/desktop2.png',
@@ -78,7 +67,16 @@
         '/web/to-do/desktop6.png'
     ];
 
+    let indexToDoM = 0;
     let indexToDoD = 0;
+
+    const nextToDoM = () => {
+        indexToDoM = (indexToDoM + 1) % toDoMobile.length
+    };
+
+    const prevToDoM = () => {
+        indexToDoM = (indexToDoM - 1 + toDoMobile.length) % toDoMobile.length;
+    };
 
     const nextToDoD = () => {
         indexToDoD = (indexToDoD + 1) % toDoDesktop.length
@@ -86,6 +84,52 @@
 
     const prevToDoD = () => {
         indexToDoD = (indexToDoD - 1 + toDoDesktop.length) % toDoDesktop.length;
+    };
+
+    // logo design
+    const coc = [ //Colours of Craft
+        '/logo/coc.png',
+        '/logo/cocBW.png'
+    ];
+
+    const aguzo = [
+        '/logo/aguzo.png',
+        '/logo/aguzoC.png',
+        '/logo/aguzoBW.png'
+    ];
+
+    const dbn = [ //DesignsByNatie
+        '/logo.png',
+        '/logo/dbnC.png',
+        '/logo/dbnBW.png'
+    ];
+
+    let indexCOC = 0;
+    let indexAguzo = 0;
+    let indexDBN = 0;
+
+    const nextCOC = () => {
+        indexCOC = (indexCOC + 1) % coc.length
+    };
+
+    const prevCOC = () => {
+        indexCOC = (indexCOC - 1 + coc.length) % coc.length;
+    };
+
+    const nextAguzo = () => {
+        indexAguzo = (indexAguzo + 1) % aguzo.length
+    };
+
+    const prevAguzo = () => {
+        indexAguzo= (indexAguzo - 1 + aguzo.length) % aguzo.length;
+    };
+
+    const nextDBN = () => {
+        indexDBN = (indexDBN + 1) % dbn.length
+    };
+
+    const prevDBN = () => {
+        indexDBN = (indexDBN - 1 + dbn.length) % dbn.length;
     };
 
 </script>
@@ -172,7 +216,7 @@
             <h2>To-Do App</h2>
             <p class="project-year">Year 2 College Project</p>
             <div class="textbox">
-                <p>I designed this to-do app to look and feel like a real notebook. 
+                <p>I designed this <b>to-do app</b> to look and feel like a <b>real notebook</b>. 
                     It includes both mobile and desktop versions, with a cozy, hand-drawn style that makes organizing tasks feel more personal and intuitive. 
                     The goal was to blend the charm of analog planning with the ease of digital tools.</p>
             </div>
@@ -192,10 +236,68 @@
         </div>
     </div>
 
-
 {:else if activeCategory === 'Logo Design'}
-    <h2>Colours of Craft</h2>
+<div class="container">
+    <div class="logos">
+        <img src={coc[indexCOC]} alt="Colours of Craft Logo" />
+        <p class="date">Year created: 2023</p>
+        <div class="arrows">
+            <span class="prev" on:click={prevCOC}>&#10094;</span>
+            <span class="next" on:click={nextCOC}>&#10095;</span>
+        </div>
+    </div>
 
+    <div class="wrapper">
+        <h2>Colours of Craft</h2>
+        <p class="project-year">Personal Project</p>
+        <div class="textbox">
+            <p>I created this logo for my mam's crochet business, <b>Colours of Craft</b>, using Clip Studio Paint. 
+                It's designed to look like a yarn ball, capturing the essence of her handmade work. 
+                I chose soft shades of pink, purple, blue, and yellow to give it a warm and friendly feel that reflects her style and brand.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="logos">
+        <img src={dbn[indexDBN]} alt="DesignsByNatie Logo" />
+        <p class="date">Year created: 2024</p>
+        <div class="arrows">
+            <span class="prev" on:click={prevDBN}>&#10094;</span>
+            <span class="next" on:click={nextDBN}>&#10095;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>DesignsByNatie</h2>
+        <p class="project-year">Personal Project</p>
+        <div class="textbox">
+            <p>A personal logo created for my Etsy shop, <b>DesignsByNatie</b>. 
+                The design captures the flowing, nature-inspired aesthetic that's present in all my work, with leaves and organic shapes being a recurring theme throughout my designs <b>and even wear!</b></p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="logos">
+        <img src={aguzo[indexAguzo]} alt="Aguzo Logo" />
+        <p class="date">Year created: 2021</p>
+        <div class="arrows">
+            <span class="prev" on:click={prevAguzo}>&#10094;</span>
+            <span class="next" on:click={nextAguzo}>&#10095;</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Aguzo</h2>
+        <p class="project-year">Freelance Project</p>
+        <div class="textbox">
+            <p>I designed this logo for someone starting their <b>own handmade clothing brand</b>. 
+                The letter "A" is formed using flowers and leaves to reflect the natural, creative feel behind their work. 
+                It's meant to feel soft, personal, and connected to their love for making things by hand.</p>
+        </div>
+    </div>
+</div>
 
 {/if}
 
@@ -294,7 +396,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start; 
-        padding: 10px 80px 10px;
+        padding: 10px 80px 20px;
         gap: 60px;
     }
 
@@ -448,5 +550,23 @@
         width: 300px;
         margin-left: 20px;
         gap: 10px;
+    }
+
+    /* logos */
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 500px;
+        margin-left: 45px;
+        gap: 10px;
+    }
+
+    .logos img {
+        height: 350px;
+        width: auto;
+        border: #526253 solid 1px;
+        border-radius: 10px;
     }
 </style>
