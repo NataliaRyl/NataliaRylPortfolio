@@ -1,24 +1,40 @@
 <script>
     import { page } from '$app/stores';
+
+    let mobileMenuOpen = false;
+
+    function toggleMobileMenu() {
+        mobileMenuOpen = !mobileMenuOpen;
+    }
+
+    function closeMenu() {
+        mobileMenuOpen = false;
+    }
 </script>
 
 <nav class="nav">
-    <ul>
-        <li><a href="/" class={$page.url.pathname === '/' ? 'selected' : ''}>Home</a></li>
-        <li><a href="/about" class={$page.url.pathname === '/about' ? 'selected' : ''}>About Me</a></li>
+    <button class="burger" on:click={toggleMobileMenu} aria-label="Toggle navigation">
+        ☰
+    </button>
+
+    <ul class:open={mobileMenuOpen}>
+        <li><a href="/" on:click={closeMenu} class={$page.url.pathname === '/' ? 'selected' : ''}>Home</a></li>
+        <li><a href="/about" on:click={closeMenu} class={$page.url.pathname === '/about' ? 'selected' : ''}>About Me</a></li>
 
         <!-- projects drop down menu -->
         <li class="dropdown">
-            <a href="javascript:void(0)" class={$page.url.pathname.includes('/projects') ? 'selected' : ''}>Projects</a>
+            <a href="javascript:void(0)" class={$page.url.pathname.includes('/projects') ? 'selected' : ''}>
+                Projects
+            <span class="dropdown-arrow">▼</span></a>
             <div class="dropdown-content">
-                <a href="/art">Art</a>
-                <a href="/animation">Animation</a>
-                <a href="/games">Games</a>
-                <a href="/other-projects">Other Projects</a>
+                <a href="/art" on:click={closeMenu}>Art</a>
+                <a href="/animation" on:click={closeMenu}>Animation</a>
+                <a href="/games" on:click={closeMenu}>Games</a>
+                <a href="/other-projects" on:click={closeMenu}>Other Projects</a>
             </div>
         </li>
 
-        <li><a href="/cv" class={$page.url.pathname === '/cv' ? 'selected' : ''}>CV</a></li>
+        <li><a href="/cv" on:click={closeMenu} class={$page.url.pathname === '/cv' ? 'selected' : ''}>CV</a></li>
     </ul>
 </nav>
 
@@ -104,5 +120,90 @@
     .dropdown-content a:hover {
         background-color: #a8bba9;
         color: white;
+    }
+
+    .dropdown-arrow {
+        font-size: 0.7em;
+        margin-left: 5px;
+    }
+
+    /* Mobile menu button */
+    .burger {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        z-index: 100;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .burger {
+            display: block;
+        }
+        
+        .nav {
+            position: relative;
+            padding: 10px;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        
+        .nav ul {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            flex-direction: column;
+            background-color: white;
+            width: 250px;
+            gap: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 99;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .nav ul.open {
+            display: flex;
+        }
+        
+        .nav li {
+            width: 100%;
+        }
+        
+        .dropdown-content {
+            position: static;
+            width: 100%;
+            box-shadow: none;
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .burger {
+            position: relative;
+            right: auto;
+            top: auto;
+            margin-bottom: 10px;
+        }
+        
+        .nav {
+            justify-content: center;
+            padding: 5px 0;
+        }
+        
+        .nav ul {
+            top: calc(100% + 10px);
+            right: 50%;
+            transform: translateX(50%);
+            width: 90%;
+            max-width: 300px;
+        }
     }
 </style>

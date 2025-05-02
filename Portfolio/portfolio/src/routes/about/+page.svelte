@@ -97,7 +97,130 @@
         justify-content: flex-end;
         gap: 20px;
         margin-top: 30px;
-        margin-right: 200px;
+        width: 100%;
+        max-width: 1400px;
+        padding: 0 80px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 1200px) {
+        .container {
+            padding: 10px 50px;
+            gap: 40px;
+        }
+        
+        h1 {
+            font-size: 42px;
+        }
+        
+        .text-box {
+            padding: 25px;
+        }
+        
+        .text-box img {
+            height: 350px;
+            margin-right: 30px;
+        }
+        
+        .text-box p {
+            font-size: 22px;
+        }
+        
+        .social {
+            padding: 0 50px;
+        }
+    }
+    
+    @media (max-width: 900px) {
+        .container {
+            padding: 10px 30px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .text-box {
+            padding: 20px;
+            box-shadow: 12px 12px 0px #526253;
+        }
+        
+        .text-box img {
+            height: 300px;
+            margin-right: 25px;
+        }
+        
+        .text-box p {
+            font-size: 20px;
+        }
+        
+        .social {
+            margin-right: 50px;
+            gap: 15px;
+        }
+        
+        #gmail, #linkedin {
+            height: 45px;
+        }
+        
+        #codeberg, #etsy, #github {
+            height: 50px;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        .text-box img {
+            float: none;
+            display: block;
+            height: auto;
+            max-width: 100%;
+            margin: 0 auto 20px;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .container {
+            padding: 10px 20px;
+            gap: 30px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .text-box {
+            padding: 15px;
+            box-shadow: 8px 8px 0px #526253;
+        }
+        
+        .text-box p {
+            font-size: 18px;
+        }
+        
+        .social {
+            justify-content: center;
+            margin-right: 0;
+            width: 100%;
+        }
+        
+        #gmail, #linkedin {
+            height: 40px;
+            padding-right: 10px;
+        }
+        
+        #codeberg, #etsy, #github {
+            height: 45px;
+        }
+        
+        #github {
+            padding-right: 10px;
+        }
     }
 
 </style>

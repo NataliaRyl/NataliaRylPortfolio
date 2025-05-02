@@ -52,7 +52,7 @@
         font-weight: 450;
         margin-bottom: 30px;
         text-align: left;
-        padding-left: 208px;
+        padding-left: 197px;
         padding-top: 10px;
     }
 
@@ -99,6 +99,8 @@
 
     .gif img {
         border-radius: 10px;
+        width: 700px;
+        height: auto;
     }
 
     .gif {
@@ -106,5 +108,107 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+    }
+
+    /* Responsive design */
+    @media (max-width: 1490px) {
+        .wrapper {
+            margin-top: 0;
+            margin-left: 0;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+
+        .gif img {
+            margin-left: 0;
+            width: 800px;
+            width: 80%;
+        }
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px 20px 60px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        h1 {
+            font-size: 42px;
+            padding-left: 107px;
+        }
+
+        .container {
+            flex-direction: column;
+            padding-bottom: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .wrapper {
+            padding-left: 0;
+            padding-top: 20px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        h1 {
+            padding-left: 70px;
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .container {
+            flex-direction: column;
+            padding-bottom: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .wrapper {
+            padding-left: 0;
+            padding-top: 20px;
+        }
+
+        .textbox {
+            padding: 20px;
+            box-shadow: 10px 10px 0px #526253;
+        }
+
+        .gif img {
+            width: 80%;
+            max-width: 600px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 32px;
+            text-align: center;
+            padding-left: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .textbox {
+            padding: 20px;
+            width: 100%;
+        }
     }
 </style>

@@ -12,9 +12,14 @@
         position: relative;
         bottom: 0;
         width: 100%;
+        min-width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
 
-    /* Mobile: Reduce padding for a more compact look */
+    /* Responsive styles */
     @media (max-width: 768px) {
         footer {
             padding: 0.75rem;

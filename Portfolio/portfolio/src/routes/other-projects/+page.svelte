@@ -569,4 +569,203 @@
         border: #526253 solid 1px;
         border-radius: 10px;
     }
+
+    /* Responsive design */
+    @media (max-width: 1490px) {
+        .wrapper, .wrapper2 {
+            margin-top: 0;
+            margin-left: 0;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+        
+        .slideshow-desktop, .slideshow-mobile, .logos, .images-to-do-m {
+            margin-left: 0;
+        }
+        
+        .container, .container2 {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px 20px 60px;
+        }
+        
+        .images-to-do-d {
+            margin-left: 0;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        h1 {
+            padding-left: 100px;
+            font-size: 42px;
+        }
+        
+        h2 {
+            font-size: 32px;
+        }
+        
+        .category-buttons {
+            margin-left: 130px;
+        }
+        
+        .slideshow-desktop img, .slideshow-desktop video {
+            height: 250px;
+        }
+        
+        .slideshow-mobile img {
+            height: 350px;
+        }
+        
+        .logos {
+            width: 400px;
+        }
+        
+        .logos img {
+            height: 300px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        h1 {
+            padding-left: 20px;
+            font-size: 36px;
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+        
+        .textbox {
+            padding: 20px;
+            box-shadow: 10px 10px 0px #526253;
+        }
+        
+        .category-buttons {
+            margin-left: 50px;
+        }
+        
+        button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        
+        .slideshow-desktop, .slideshow-mobile, .logos, .images-to-do-m {
+            width: 90%;
+        }
+        
+        .slideshow-desktop img, .slideshow-desktop video {
+            height: 200px;
+        }
+        
+        .slideshow-mobile img {
+            height: 300px;
+        }
+        
+        .logos img {
+            height: 250px;
+        }
+        
+        .images-to-do-d img {
+            height: 200px;
+        }
+        
+        .images-to-do-m img {
+            height: 300px;
+        }
+        
+        .wrapper2 p {
+            font-size: 20px;
+        }
+        
+        .wrapper2 li {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 32px;
+            text-align: center;
+            padding-left: 0;
+        }
+        
+        h2 {
+            font-size: 24px;
+        }
+        
+        .category-buttons {
+            margin-left: 0;
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px 10px;
+        }
+        
+        button {
+            padding: 8px 16px;
+            font-size: 12px;
+            flex-basis: calc(50% - 20px);
+            min-width: 120px;
+        }
+        
+        .slideshow-desktop img, .slideshow-desktop video {
+            height: 180px;
+        }
+        
+        .slideshow-mobile img {
+            height: 250px;
+        }
+        
+        .logos {
+            width: 300px;
+        }
+        
+        .logos img {
+            height: 200px;
+        }
+        
+        .images-to-do-d img {
+            height: 180px;
+        }
+        
+        .images-to-do-m img {
+            height: 250px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        
+        .textbox {
+            padding: 15px;
+            width: 100%;
+            box-shadow: 8px 8px 0px #526253;
+        }
+        
+        .wrapper2 p {
+            font-size: 18px;
+        }
+        
+        .wrapper2 li {
+            font-size: 14px;
+        }
+        
+        .links {
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        
+        .links a {
+            width: 80%;
+            text-align: center;
+        }
+    }
 </style>
