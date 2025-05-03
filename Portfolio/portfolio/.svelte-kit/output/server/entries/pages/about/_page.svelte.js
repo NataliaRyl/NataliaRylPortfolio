@@ -1,0 +1,12 @@
+import { S as pop, P as push, T as stringify } from "../../../chunks/index.js";
+import { b as base } from "../../../chunks/paths.js";
+import { a as attr } from "../../../chunks/attributes.js";
+function _page($$payload, $$props) {
+  push();
+  $$payload.out += `<div class="container svelte-okpcrr"><div class="content svelte-okpcrr"><h1 class="svelte-okpcrr">About Me</h1> <div class="text-box svelte-okpcrr"><img${attr("src", `${stringify(base)}/profile.jpg`)} alt="Profile of Natalia" id="floated" class="svelte-okpcrr"> <p class="svelte-okpcrr"><b>I'm a student currently studying Interactive Digital Art and Design.</b></p> <p class="svelte-okpcrr">I'm passionate about animation and concept art—I love creating characters, worlds, and stories that feel alive. 
+                Art has always been my way of exploring ideas and expressing emotions.</p> <p class="svelte-okpcrr">I enjoy making games for fun, experimenting with visuals and mechanics to bring ideas to life.</p> <p class="svelte-okpcrr">I also design logos on the side, finding joy in creating simple yet impactful designs.</p> <p class="svelte-okpcrr">Recently, I've been diving into UI/UX design, where creativity meets functionality. Outside of digital art, I run a small Etsy shop where I create custom bead patterns.</p> <p class="svelte-okpcrr">I'm always learning, experimenting, and pushing myself to improve. This portfolio is a glimpse into my journey—thanks for stopping by!</p></div></div></div> <div class="social svelte-okpcrr"><a href="mailto:nataliaryl492@gmail.com" target="_blank"><img${attr("src", `${stringify(base)}/socials/gmail.png`)} alt="gmail logo" id="gmail" class="svelte-okpcrr"></a> <a href="https://www.linkedin.com/in/natalia-ryl-4902n/" target="_blank"><img${attr("src", `${stringify(base)}/socials/linkedin.png`)} alt="linkedin logo" id="linkedin" class="svelte-okpcrr"></a> <a href="https://github.com/NataliaRyl" target="_blank"><img${attr("src", `${stringify(base)}/socials/github.png`)} alt="github logo" id="github" class="svelte-okpcrr"></a> <a href="https://codeberg.org/NataliaRyl" target="_blank"><img${attr("src", `${stringify(base)}/socials/codeberg.png`)} alt="codeberg logo" id="codeberg" class="svelte-okpcrr"></a> <a href="https://designsbynatie.etsy.com" target="_blank"><img${attr("src", `${stringify(base)}/socials/etsy.png`)} alt="etsy logo" id="etsy" class="svelte-okpcrr"></a></div>`;
+  pop();
+}
+export {
+  _page as default
+};
