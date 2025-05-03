@@ -2,6 +2,7 @@
 <!-- used above to help with image carasoul -->
 <script>
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
 
     onMount(() => {
         console.log("Art Page Loaded");
@@ -11,38 +12,38 @@
     const categories = ['Show All', 'Character Design', 'Pixel Art', 'Storyboards'];
 
     const designImages = [
-        '/art/design.png',
-        '/art/sketch.jpg'
+        `${ base }/art/design.png`,
+        `${ base }/art/sketch.jpg`
     ];
 
     const pixelAssets = [
-        '/art/bow-arrow.png',
-        '/art/med-kit.png',
-        '/art/shield.png'
+        `${ base }/art/bow-arrow.png`,
+        `${ base }/art/med-kit.png`,
+        `${ base }/art/shield.png`
     ];
 
     const bolgin = [
-        '/art/bolgin.png',
-        '/art/bolgin-front.png',
-        '/art/bolgin-side.png',
-        '/art/bolgin-sad.png',
-        '/art/bolgin-sleeping.png',
-        '/art/bolgin-forest.png',
-        '/art/bolgin-pickaxe.png',
-        '/art/bolgin-short.png',
-        '/art/bolgin-sword.png',
-        '/art/bolgin-petting.png'
+        `${ base }/art/bolgin.png`,
+        `${ base }/art/bolgin-front.png`,
+        `${ base }/art/bolgin-side.png`,
+        `${ base }/art/bolgin-sad.png`,
+        `${ base }/art/bolgin-sleeping.png`,
+        `${ base }/art/bolgin-forest.png`,
+        `${ base }/art/bolgin-pickaxe.png`,
+        `${ base }/art/bolgin-short.png`,
+        `${ base }/art/bolgin-sword.png`,
+        `${ base }/art/bolgin-petting.png`
     ];
 
     const totto = [
-        '/art/totto.png',
-        '/art/totto-front.png',
-        '/art/totto-side.png',
-        '/art/totto-happy.png',
-        '/art/totto-sleeping.png',
-        '/art/totto-flowers.png',
-        '/art/totto-scared.png',
-        '/art/totto-licking.png'
+        `${ base }/art/totto.png`,
+        `${ base }/art/totto-front.png`,
+        `${ base }/art/totto-side.png`,
+        `${ base }/art/totto-happy.png`,
+        `${ base }/art/totto-sleeping.png`,
+        `${ base }/art/totto-flowers.png`,
+        `${ base }/art/totto-scared.png`,
+        `${ base }/art/totto-licking.png`
     ];
 
     let index = 0;
@@ -101,7 +102,7 @@
 <!-- art 1 -->
 <div class="container">
     <div class="art">
-        <img src="/art/CTA.png" alt="character turn around">
+        <img src="{ base }/art/CTA.png" alt="character turn around">
         <p class="date">Year created: 2024</p>
     </div>
 
@@ -209,7 +210,7 @@
 <!-- art 1 -->
 <div class="container">
     <div class="art">
-        <img src="/art/CTA.png" alt="character turn around">
+        <img src="{ base }/art/CTA.png" alt="character turn around">
         <p class="date">Year created: 2024</p>
     </div>
 

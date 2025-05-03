@@ -1,13 +1,14 @@
 <script>
     // import Navigation.svelte from lib folder
     import { Navigation } from "$lib"
+    import { base } from '$app/paths';
 </script>
 
 
 <header>
     <!-- Logo -->
     <div class="logo">
-        <img src="/logo.png" alt="Designs by Natie Logo">
+        <img src="{ base }/logo.png" alt="Designs by Natie Logo">
     </div>
 
     <!-- Navigation -->

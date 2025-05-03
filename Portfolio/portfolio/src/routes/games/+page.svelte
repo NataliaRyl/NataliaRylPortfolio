@@ -1,18 +1,19 @@
 <script>
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
 
     onMount(() => {
         console.log("Games Page Loaded");
     });
 
     const armyEscapeImages = [
-        '/game/mainMenu.png',
-        '/game/instructions.png',
-        '/game/gameEnd.png',
-        '/game/members1.png',
-        '/game/members2.png',
-        '/game/bg.png',
-        '/game/playerSpritesheet.png'
+        `${base}/game/mainMenu.png`,
+        `${base}/game/instructions.png`,
+        `${base}/game/gameEnd.png`,
+        `${base}/game/members1.png`,
+        `${base}/game/members2.png`,
+        `${base}/game/bg.png`,
+        `${base}/game/playerSpritesheet.png`
     ];
 
     let index = 0;
@@ -32,7 +33,7 @@
 <div class="container">
     <div class="video">
         <video controls>
-            <source src="/game/armyEscape.mp4" type="video/mp4" />
+            <source src="{ base }/game/armyEscape.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         <p class="date">Year created: 2024</p>

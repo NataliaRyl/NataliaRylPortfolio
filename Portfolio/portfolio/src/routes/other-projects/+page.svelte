@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
 
     onMount(() => {
         console.log("Other Projects Page Loaded");
@@ -10,22 +11,22 @@
 
     // sage academy 
     const sageAcademyDesktop = [
-        {type: 'video', src: '/web/sage-academy/sageAcademy.mp4'},
-        {type: 'image', src: '/web/sage-academy/homePage.png'},
-        {type: 'image', src: '/web/sage-academy/signIn.png'},
-        {type: 'image', src: '/web/sage-academy/staffHome.png'},
-        {type: 'image', src: '/web/sage-academy/quizPage.png'},
-        {type: 'image', src: '/web/sage-academy/addTopic.png'},
-        {type: 'image', src: '/web/sage-academy/searchBar.png'}
+        {type: 'video', src: `${ base }/web/sage-academy/sageAcademy.mp4`},
+        {type: 'image', src: `${ base }/web/sage-academy/homePage.png`},
+        {type: 'image', src: `${ base }/web/sage-academy/signIn.png`},
+        {type: 'image', src: `${ base }/web/sage-academy/staffHome.png`},
+        {type: 'image', src: `${ base }/web/sage-academy/quizPage.png`},
+        {type: 'image', src: `${ base }/web/sage-academy/addTopic.png`},
+        {type: 'image', src: `${ base }/web/sage-academy/searchBar.png`}
     ];
 
     const sageAcademyMobile = [
-        '/web/sage-academy/mobileHome.jpg',
-        '/web/sage-academy/mobileSignIn.jpg',
-        '/web/sage-academy/mobileStaffHome.jpg',
-        '/web/sage-academy/mobileNav.jpg',
-        '/web/sage-academy/mobileLR.jpg',
-        '/web/sage-academy/mobileAddModule.jpg'
+        `${ base }/web/sage-academy/mobileHome.jpg`,
+        `${ base }/web/sage-academy/mobileSignIn.jpg`,
+        `${ base }/web/sage-academy/mobileStaffHome.jpg`,
+        `${ base }/web/sage-academy/mobileNav.jpg`,
+        `${ base }/web/sage-academy/mobileLR.jpg`,
+        `${ base }/web/sage-academy/mobileAddModule.jpg`
     ];
 
     let index = 0;
@@ -50,21 +51,21 @@
     // to do app
 
     const toDoMobile = [
-        '/web/to-do/mobile1.png',
-        '/web/to-do/mobile2.png',
-        '/web/to-do/mobile3.png',
-        '/web/to-do/mobile4.png',
-        '/web/to-do/mobile5.png',
-        '/web/to-do/mobile6.png'
+        `${ base }/web/to-do/mobile1.png`,
+        `${ base }/web/to-do/mobile2.png`,
+        `${ base }/web/to-do/mobile3.png`,
+        `${ base }/web/to-do/mobile4.png`,
+        `${ base }/web/to-do/mobile5.png`,
+        `${ base }/web/to-do/mobile6.png`
     ];
 
     const toDoDesktop = [
-        '/web/to-do/desktop1.png',
-        '/web/to-do/desktop2.png',
-        '/web/to-do/desktop3.png',
-        '/web/to-do/desktop4.png',
-        '/web/to-do/desktop5.png',
-        '/web/to-do/desktop6.png'
+        `${ base }/web/to-do/desktop1.png`,
+        `${ base }/web/to-do/desktop2.png`,
+        `${ base }/web/to-do/desktop3.png`,
+        `${ base }/web/to-do/desktop4.png`,
+        `${ base }/web/to-do/desktop5.png`,
+        `${ base }/web/to-do/desktop6.png`
     ];
 
     let indexToDoM = 0;
@@ -88,20 +89,20 @@
 
     // logo design
     const coc = [ //Colours of Craft
-        '/logo/coc.png',
-        '/logo/cocBW.png'
+        `${ base }/logo/coc.png`,
+        `${ base }/logo/cocBW.png`
     ];
 
     const aguzo = [
-        '/logo/aguzo.png',
-        '/logo/aguzoC.png',
-        '/logo/aguzoBW.png'
+        `${ base }/logo/aguzo.png`,
+        `${ base }/logo/aguzoC.png`,
+        `${ base }/logo/aguzoBW.png`
     ];
 
     const dbn = [ //DesignsByNatie
-        '/logo.png',
-        '/logo/dbnC.png',
-        '/logo/dbnBW.png'
+        `${ base }/logo.png`,
+        `${ base }/logo/dbnC.png`,
+        `${ base }/logo/dbnBW.png`
     ];
 
     let indexCOC = 0;
@@ -222,8 +223,8 @@
             </div>
 
             <div class="links">
-                <a href="/images/web/to-do/to-do-mobile.zip" download>Download Mobile Files (.zip)</a>
-                <a href="/images/web/to-do/to-do-desktop.zip" download>Download Desktop Files (.zip)</a>
+                <a href="{ base }/web/to-do/to-do-mobile.zip" download>Download Mobile Files (.zip)</a>
+                <a href="{ base }/web/to-do/to-do-desktop.zip" download>Download Desktop Files (.zip)</a>
             </div>
 
             <div class="images-to-do-d">

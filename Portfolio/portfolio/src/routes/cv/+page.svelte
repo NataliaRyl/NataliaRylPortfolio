@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
 
     onMount(() => {
         console.log("CV Page Loaded");
@@ -11,11 +12,11 @@
 
     <div class="wrapper">
         <div class="cv-content">
-            <img src="/CV1.png" alt="CV Page 1" class="cv-page">
-            <img src="/CV2.png" alt="CV Page 2" class="cv-page">
+            <img src="{ base }/CV1.png" alt="CV Page 1" class="cv-page">
+            <img src="{ base }/CV2.png" alt="CV Page 2" class="cv-page">
         </div>
 
-        <a href="/Natalia_Ryl_CV.pdf" download="Natalia_Ryl_CV.pdf" class="download-link">Download CV</a>
+        <a href="{ base }/Natalia_Ryl_CV.pdf" download="Natalia_Ryl_CV.pdf" class="download-link">Download CV</a>
     </div>
 </div>
 

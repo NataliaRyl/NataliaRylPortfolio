@@ -1,5 +1,6 @@
 <script>
     import { page } from '$app/stores';
+    import { base } from '$app/paths';
 
     let mobileMenuOpen = false;
 
@@ -18,8 +19,8 @@
     </button>
 
     <ul class:open={mobileMenuOpen}>
-        <li><a href="/" on:click={closeMenu} class={$page.url.pathname === '/' ? 'selected' : ''}>Home</a></li>
-        <li><a href="/about" on:click={closeMenu} class={$page.url.pathname === '/about' ? 'selected' : ''}>About Me</a></li>
+        <li><a href="{ base }/" on:click={closeMenu} class={$page.url.pathname === '/' ? 'selected' : ''}>Home</a></li>
+        <li><a href="{ base }/about" on:click={closeMenu} class={$page.url.pathname === '/about' ? 'selected' : ''}>About Me</a></li>
 
         <!-- projects drop down menu -->
         <li class="dropdown">
@@ -27,14 +28,14 @@
                 Projects
             <span class="dropdown-arrow">▼</span></a>
             <div class="dropdown-content">
-                <a href="/art" on:click={closeMenu}>Art</a>
-                <a href="/animation" on:click={closeMenu}>Animation</a>
-                <a href="/games" on:click={closeMenu}>Games</a>
-                <a href="/other-projects" on:click={closeMenu}>Other Projects</a>
+                <a href="{ base }/art" on:click={closeMenu}>Art</a>
+                <a href="{ base }/animation" on:click={closeMenu}>Animation</a>
+                <a href="{ base }/games" on:click={closeMenu}>Games</a>
+                <a href="{ base }/other-projects" on:click={closeMenu}>Other Projects</a>
             </div>
         </li>
 
-        <li><a href="/cv" on:click={closeMenu} class={$page.url.pathname === '/cv' ? 'selected' : ''}>CV</a></li>
+        <li><a href="{ base }/cv" on:click={closeMenu} class={$page.url.pathname === '/cv' ? 'selected' : ''}>CV</a></li>
     </ul>
 </nav>
 
