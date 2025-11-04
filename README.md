@@ -1,5 +1,8 @@
 # NataliaRylPortfolio
 
+### Name: Natalia Ryl
+### Student Number: C00294480
+### Submission Date: 02 May 2025
 
 # 🧾 Project Title and Summary
 ## 1. Project Name:
