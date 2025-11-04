@@ -135,7 +135,7 @@
 
 </script>
 
-<h1>Other Projects</h1>
+<h1>Designs</h1>
 
 <div class="category-buttons">
     {#each categories as cat}

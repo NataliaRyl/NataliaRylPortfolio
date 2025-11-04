@@ -28,10 +28,10 @@
                 Projects
             <span class="dropdown-arrow">▼</span></a>
             <div class="dropdown-content">
+                <a href="{ base }/designs" on:click={closeMenu}>Designs</a>
                 <a href="{ base }/art" on:click={closeMenu}>Art</a>
                 <a href="{ base }/animation" on:click={closeMenu}>Animation</a>
                 <a href="{ base }/games" on:click={closeMenu}>Games</a>
-                <a href="{ base }/other-projects" on:click={closeMenu}>Other Projects</a>
             </div>
         </li>
 
