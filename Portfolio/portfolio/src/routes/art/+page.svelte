@@ -398,9 +398,14 @@
     .container {
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start; 
-        padding: 10px 80px 80px;
+        align-items: flex-start;
         gap: 60px;
+        padding: 40px;
+        margin: 40px auto;
+        width: 80%;
+        max-width: 1400px;
+        background-color: #f0f0f0;
+        border-radius: 15px;
     }
 
     .textbox {
@@ -477,7 +482,7 @@
     }
 
     /* Responsive styles */
-    @media (max-width: 1490px) {
+    @media (max-width: 1400px) {
         .wrapper {
             margin-top: 0;
             margin-left: 0;

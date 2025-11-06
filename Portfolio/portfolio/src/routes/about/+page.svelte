@@ -15,12 +15,12 @@
             <img src="{ base }/profile.jpg" alt="Profile of Natalia" id="floated">
             
             <p><b>I'm a student currently studying Interactive Digital Art and Design.</b></p>
-            <p>I'm passionate about animation and concept art—I love creating characters, worlds, and stories that feel alive. 
-                Art has always been my way of exploring ideas and expressing emotions.</p>
-            <p>I enjoy making games for fun, experimenting with visuals and mechanics to bring ideas to life.</p>
-            <p>I also design logos on the side, finding joy in creating simple yet impactful designs.</p>
-            <p>Recently, I've been diving into UI/UX design, where creativity meets functionality. Outside of digital art, I run a small Etsy shop where I create custom bead patterns.</p>
-            <p>I'm always learning, experimenting, and pushing myself to improve. This portfolio is a glimpse into my journey—thanks for stopping by!</p>
+            <p>I'm passionate about creating designs that feel intuitive and meaningful.</p> 
+            <p>UI/UX design has become my main focus, and I love exploring how visuals, interaction, and usability come together to shape experiences. 
+                I'm drawn to designs that not only look good but make sense for the people using them.</p> 
+            <p>Outside of UI/UX, I enjoy making animations, concept art, and small games for fun — they help me stay creative and inspire new ideas in my design process.</p> 
+            <p>I also design logos and run a small Etsy shop where I create custom bead patterns, which lets me experiment with colour, balance, and simplicity.</p> 
+            <p>I'm always learning, experimenting, and growing as a designer. This portfolio is a look into that journey — thanks for stopping by!</p>
         </div>
     </div>
 </div>
@@ -66,14 +66,14 @@
 
     .text-box img {
         float: left;
-        height: 400px;
+        height: 350px;
         margin-right: 40px;
         margin-bottom: 20px;
         border-radius: 10px;
     }
 
     .text-box p {
-        font-size: 26px;
+        font-size: 22px;
         margin: 0 0 10px 0;
         text-align: left;
     }
@@ -127,7 +127,7 @@
         }
         
         .text-box p {
-            font-size: 22px;
+            font-size: 20px;
         }
         
         .social {
@@ -156,7 +156,7 @@
         }
         
         .text-box p {
-            font-size: 20px;
+            font-size: 18px;
         }
         
         .social {
@@ -201,7 +201,7 @@
         }
         
         .text-box p {
-            font-size: 18px;
+            font-size: 16px;
         }
         
         .social {

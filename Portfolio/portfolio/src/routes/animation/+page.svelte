@@ -90,8 +90,14 @@
     }
 
     .container {
-        display: flex;
-        padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px;
+    margin: 40px auto;
+    background-color: #f0f0f0;
+    border-radius: 15px;
     }
 
     .wrapper {
@@ -112,7 +118,7 @@
     }
 
     /* Responsive design */
-    @media (max-width: 1490px) {
+    @media (max-width: 1400px) {
         .wrapper {
             margin-top: 0;
             margin-left: 0;

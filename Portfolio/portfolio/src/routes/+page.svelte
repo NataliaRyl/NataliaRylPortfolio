@@ -5,10 +5,10 @@
 // Portfolio categories
     const portfolioCategories = [
         {
-            title: "Designs",
-            description: "Web development, UI/UX design, and logos",
+            title: "UI/UX",
+            description: "Web development, Web Design",
             image: `${base}/web/sage-academy/homePage.png`,
-            link: `${base}/designs`
+            link: `${base}/ui_ux`
         },
         {
             title: "Animation",
@@ -27,6 +27,12 @@
             description: "Interactive game projects",
             image: `${base}/game/mainMenu.png`,
             link: `${base}/games`
+        },
+        {
+            title: "Logos",
+            description: "Logo designs",
+            image: `${base}/logo/coc.png`,
+            link: `${base}/logos`
         }
     ];
 
@@ -134,7 +140,7 @@
         }
         
         .intro-textbox p {
-            font-size: 22px;
+            font-size: 18px;
         }
         
         img {
@@ -193,7 +199,7 @@
         }
         
         .intro-textbox p {
-            font-size: 18px;
+            font-size: 16px;
         }
         
         img {
@@ -203,7 +209,7 @@
 
     /* Portfolio Showcase Styles */
     .portfolio-showcase {
-        padding: 50px 80px 60px;
+        padding: 0px 80px 60px;
     }
 
     .portfolio-showcase h2 {
