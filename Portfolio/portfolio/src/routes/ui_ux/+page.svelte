@@ -87,6 +87,54 @@
         indexToDoD = (indexToDoD - 1 + toDoDesktop.length) % toDoDesktop.length;
     };
 
+    // jt motors 
+    const motorsDesktop = [
+        {type: 'video', src: `${ base }/web/jtmotors/wpMotors.mp4`},
+        {type: 'image', src: `${ base }/web/jtmotors/about.png`},
+        {type: 'image', src: `${ base }/web/jtmotors/account.png`},
+        {type: 'image', src: `${ base }/web/jtmotors/basket.png`},
+        {type: 'image', src: `${ base }/web/jtmotors/bookApp.png`},
+        {type: 'image', src: `${ base }/web/jtmotors/bookService.png`},
+        {type: 'image', src: `${ base }/web/jtmotors/contact.png`},
+        {type: 'image', src: `${ base }/web/jtmotors/home.png`},
+        {type: 'image', src: `${ base }/web/jtmotors/rating.png`},
+        {type: 'image', src: `${ base }/web/jtmotors/review.png`},
+        {type: 'image', src: `${ base }/web/jtmotors/service.png`}
+    ];
+
+    const motorsMobile = [
+        `${ base }/web/jtmotors/mobileHome.jpg`,
+        `${ base }/web/jtmotors/mobileAbout.jpg`,
+        `${ base }/web/jtmotors/mobileAccount.jpg`,
+        `${ base }/web/jtmotors/mobileBasket.jpg`,
+        `${ base }/web/jtmotors/mobileBookApp.jpg`,
+        `${ base }/web/jtmotors/mobileBookService.jpg`,
+        `${ base }/web/jtmotors/mobileContact.jpg`,
+        `${ base }/web/jtmotors/mobileMenu.jpg`,
+        `${ base }/web/jtmotors/mobileRating.jpg`,
+        `${ base }/web/jtmotors/mobileReview.jpg`,
+        `${ base }/web/jtmotors/mobileServices.jpg`
+    ];
+
+    let indexMotors = 0;
+    let indexMotorsM = 0;
+
+    const nextMotors = () => {
+        indexMotors = (indexMotors + 1) % motorsDesktop.length
+    };
+
+    const prevMotors = () => {
+        indexMotors = (indexMotors - 1 + motorsDesktop.length) % motorsDesktop.length;
+    };
+
+    const nextMotorsM = () => {
+        indexMotorsM = (indexMotorsM + 1) % motorsMobile.length
+    };
+
+    const prevMotorsM = () => {
+        indexMotorsM = (indexMotorsM - 1 + motorsMobile.length) % motorsMobile.length;
+    };
+
 </script>
 
 <h1>UI/UX</h1>
@@ -159,6 +207,7 @@
 
 
 {:else if activeCategory === 'Web Design'}
+<!-- to do app  -->
 <div class="project-box">
     <div class="container">
         <div class="images-to-do-m">
@@ -190,6 +239,64 @@
                     <span class="prev" on:click={prevToDoD}>&#10094;</span>
                     <span class="next" on:click={nextToDoD}>&#10095;</span>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jt motors -->
+<div class="project-box">
+    <div class="container">
+        <div class="slideshow-desktop">
+            {#if motorsDesktop[indexMotors].type === 'video'}
+                <video controls>
+                    <source src={motorsDesktop[indexMotors].src} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            {:else if motorsDesktop[indexMotors].type === 'image'}
+                <img src={motorsDesktop[indexMotors].src} alt="JT Motors preview slideshow" />
+            {/if}
+            <p class="date">Year created: 2025</p>
+
+            <div class="arrows">
+                <span class="prev" on:click={prevMotors}>&#10094;</span>
+                <span class="next" on:click={nextMotors}>&#10095;</span>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2>JT Motors</h2>
+            <p class="project-year">Year 3 College Project</p>
+            <div class="textbox">
+            <p>I created this <b>car service booking website</b> using <b>WordPress</b> templates and plugins. 
+                It was designed to feel clean and easy to navigate, allowing users to quickly book a service and find the information they need. 
+                The goal was to make the experience simple, clear, and user-friendly.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="slideshow-mobile">
+            <img src={motorsMobile[indexMotorsM]} alt="JT Motors mobile preview" />
+            <div class="arrows">
+                <span class="prev" on:click={prevMotorsM}>&#10094;</span>
+                <span class="next" on:click={nextMotorsM}>&#10095;</span>
+            </div>
+        </div>
+
+        <div class="wrapper2">
+            <p><b>Key Features</b></p>
+            <ul>
+                <li>Homepage with header links to every page</li>
+                <li>Contact page with a working form</li>
+                <li>Review page showing real reviews and a submission form</li>
+                <li>Services page with a “Book” button for each service</li>
+                <li>Booking page with calendar, time, and service selection</li>
+                <li>Basket and checkout system for easy payments</li>
+                <li>Customer dashboard to view and manage bookings</li>
+            </ul>
+
+            <div class="links">
+                <a href="https://c00294480.candept.com/JTMotors/" target="_blank">Link to Wordpress Website</a>
             </div>
         </div>
     </div>
