@@ -1,0 +1,27 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/about": [
+		"src/routes/+layout.js"
+	],
+	"/animation": [
+		"src/routes/+layout.js"
+	],
+	"/art": [
+		"src/routes/+layout.js"
+	],
+	"/cv": [
+		"src/routes/+layout.js"
+	],
+	"/games": [
+		"src/routes/+layout.js"
+	],
+	"/logos": [
+		"src/routes/+layout.js"
+	],
+	"/ui_ux": [
+		"src/routes/+layout.js"
+	]
+}

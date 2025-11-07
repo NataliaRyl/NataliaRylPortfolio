@@ -1,0 +1,12 @@
+import { S as pop, P as push, T as stringify } from "../../../chunks/index.js";
+import { b as base } from "../../../chunks/paths.js";
+import { a as attr } from "../../../chunks/attributes.js";
+function _page($$payload, $$props) {
+  push();
+  $$payload.out += `<div class="container svelte-kgjxpa"><div class="content svelte-kgjxpa"><h1 class="svelte-kgjxpa">About Me</h1> <div class="text-box svelte-kgjxpa"><img${attr("src", `${stringify(base)}/profile.jpg`)} alt="Profile of Natalia" id="floated" class="svelte-kgjxpa"> <p class="svelte-kgjxpa"><b>I'm a student currently studying Interactive Digital Art and Design.</b></p> <p class="svelte-kgjxpa">I'm passionate about creating designs that feel intuitive and meaningful.</p> <p class="svelte-kgjxpa">UI/UX design has become my main focus, and I love exploring how visuals, interaction, and usability come together to shape experiences. 
+                I'm drawn to designs that not only look good but make sense for the people using them.</p> <p class="svelte-kgjxpa">Outside of UI/UX, I enjoy making animations, concept art, and small games for fun — they help me stay creative and inspire new ideas in my design process.</p> <p class="svelte-kgjxpa">I also design logos and run a small Etsy shop where I create custom bead patterns, which lets me experiment with colour, balance, and simplicity.</p> <p class="svelte-kgjxpa">I'm always learning, experimenting, and growing as a designer. This portfolio is a look into that journey — thanks for stopping by!</p></div></div></div> <div class="social svelte-kgjxpa"><a href="mailto:nataliaryl492@gmail.com" target="_blank"><img${attr("src", `${stringify(base)}/socials/gmail.png`)} alt="gmail logo" id="gmail" class="svelte-kgjxpa"></a> <a href="https://www.linkedin.com/in/natalia-ryl-4902n/" target="_blank"><img${attr("src", `${stringify(base)}/socials/linkedin.png`)} alt="linkedin logo" id="linkedin" class="svelte-kgjxpa"></a> <a href="https://github.com/NataliaRyl" target="_blank"><img${attr("src", `${stringify(base)}/socials/github.png`)} alt="github logo" id="github" class="svelte-kgjxpa"></a> <a href="https://codeberg.org/NataliaRyl" target="_blank"><img${attr("src", `${stringify(base)}/socials/codeberg.png`)} alt="codeberg logo" id="codeberg" class="svelte-kgjxpa"></a> <a href="https://designsbynatie.etsy.com" target="_blank"><img${attr("src", `${stringify(base)}/socials/etsy.png`)} alt="etsy logo" id="etsy" class="svelte-kgjxpa"></a></div>`;
+  pop();
+}
+export {
+  _page as default
+};
