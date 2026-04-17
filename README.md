@@ -1,4 +1,4 @@
-# NataliaRylPortfolio
+# NataliaRylPortfolio_VER_Design
 
 ### Name: Natalia Ryl
 ### Student Number: C00294480
