@@ -23,7 +23,7 @@ https://nataliaryl.github.io/NataliaRylPortfolio/
 
 # 🧠 Design Rationale
 ## 5. Design Inspiration:
-I wanted the portfolio to feel clean and personal, with a simple layout that makes my work easy to explore. The soft green and white palette reflects my style—green’s my favourite colour and really feels like part of my personality. It creates a calm, welcoming vibe, giving the site a relaxed and creative feel.
+I wanted the portfolio to feel clean and personal, with a simple layout that makes my work easy to explore. The soft green and white palette reflects my style, green’s my favourite colour and really feels like part of my personality. It creates a calm, welcoming vibe, giving the site a relaxed and creative feel.
 
 
 ## 6. Design Goals:
